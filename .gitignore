@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+#Extras
+/genshinimpact.js
+
 # production
 /build
 
