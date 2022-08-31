@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DbzCard = ({name, species, image, id}) => {
+const GenshinCards = ({name, species, image, id}) => {
   return (
     <div>
         <hi>{id}-{name}</hi>
@@ -10,4 +10,4 @@ const DbzCard = ({name, species, image, id}) => {
   )
 }
 
-export default DbzCard
+export default GenshinCards

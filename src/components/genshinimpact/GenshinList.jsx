@@ -9,4 +9,6 @@ const GenshinList = ({chars}) => {
   )
 }
 
+
+
 export default GenshinList

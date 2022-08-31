@@ -1,13 +1,15 @@
 // Contenedor principal 
-import React, { useEffect, useState } from 'react'
+
 import GenshinList from './GenshinList'
 
 
-
 const GenshinContainer = () => {
-      const genshin = require('genshin')
-      console.log(genshin.characters('amber'))
-            
+      fetch("")
+      .then( response => response.json())
+            .then ( data => {
+                console.log(data)
+               
+            })
       return (
           <div>
               <GenshinList></GenshinList>
