@@ -1,13 +1,16 @@
 import React from 'react'
 import GenshinCards from './GenshinCards'
-const GenshinList = ({chars}) => {
+
+
+const GenshinList = ({genshin}) => {
   return (
     <div>
-        {chars.map ( c => 
-            <GenshinCards key = {c.id} id={c.id} name={c.name} species={c.species} image={c.image}></GenshinCards>)}
+        {genshin.length ? ( genshin.map((gen) => <GenshinCards classNmae="flex flex-row" key = {gen.id} {...gen} />)) : (
+            <progress className="progress w-56"></progress>
+          )}
     </div>
-  )
-}
+  );
+};
 
 
 

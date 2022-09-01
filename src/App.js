@@ -12,10 +12,12 @@ function App() {
       <header>
           <NavBar/>
           <ItemListContainer greeting= "¡Welcome to Genshin Impact Store!"></ItemListContainer>
-          <GenshinContainer></GenshinContainer>
-        <div>
-        </div>
       </header>
+      <main>
+        <div>
+          <GenshinContainer></GenshinContainer>
+        </div>
+      </main>
     </div>
     )
 
