@@ -2,9 +2,23 @@ import React, { useState } from 'react'
 
 const ItemCount = ({stock, initial}) => {
 
-    const [onAdd, setAdd] = useState(0);
+    const [onAdd, setAdd] = useState(initial);
 
+    const suma = () => {
+      if (stock === 5) {
+        setAdd (5);
+      }else {
+        setAdd(onAdd => onAdd + 1);
+      }
+    }
     
+    const resta = () => {
+      if (initial === 0 ) {
+        setAdd (0);
+      } else {
+        setAdd(onAdd => onAdd - 1)
+      }
+    }
 
 
 
@@ -15,9 +29,9 @@ const ItemCount = ({stock, initial}) => {
             <span className="label-text">Enter amount</span>
         </label>
         <label className="input-group">
-            <button className="btn btn-primary" onClick={() => setAdd(onAdd => onAdd - 1)}>-</button>
-            <input type="number" placeholder={onAdd} className="input input-bordered" />
-            <button className="btn btn-primary" onClick={() => setAdd(onAdd => onAdd + 1)}>+</button>
+            <button className="btn btn-primary" onClick={resta}>-</button>
+            <input type="text" placeholder={initial} className="input input-bordered" />
+            <button className="btn btn-primary" onClick={suma}>+</button>
             <button className="btn btn-primary" onClick={() => setAdd(0)}>Reset</button>
         </label>
         

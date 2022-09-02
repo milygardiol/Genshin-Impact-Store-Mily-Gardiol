@@ -17,7 +17,7 @@ const GenshinContainer = () => {
               .then ( data => {
                   console.log(data)
                     setGenshin(data)
-                const getGenshin = new Promise((resolve, reject) => {
+                new Promise((resolve, reject) => {
                     setTimeout(() => {
                         if (data) {
                             resolve(data);
@@ -27,12 +27,6 @@ const GenshinContainer = () => {
                     }, 2000);
                 })
               })
-
-              getGenshin(genshin, 2000)
-                .then((res) => {
-                    setGenshin(res);
-                })
-                .catch((err) => console.log(err, ": there´s no characters"));
 
             },[]);
             
@@ -45,19 +39,6 @@ const GenshinContainer = () => {
 
         }
 
-
-
-            //     const getGames = (data) => {
-            //       new Promise ((resolve, reject)) => {
-            //         setTimeout((data) => {
-            //             if (data) {
-            //                 resolve(data);
-            //             } else {
-            //                 reject("Error");
-            //             }
-            //           }, 2000);
-            //     }
-            //   }
 
     
 
