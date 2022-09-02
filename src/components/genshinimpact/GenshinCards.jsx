@@ -13,8 +13,8 @@ const GenshinCards = ({name, description, quote, city, element, weapon, image}) 
         <p>Element: {element}</p>
         <p>Weapon: {weapon}</p>
         <div className="card-actions justify-end">
-          <ItemCount stock="10" initial="1"></ItemCount>
-          <button class="btn">More info</button>
+          <ItemCount stock="5" initial="1"></ItemCount>
+          <button className="btn">More info</button>
           <button className="btn btn-primary">Buy it</button>
         </div>
       </div>
