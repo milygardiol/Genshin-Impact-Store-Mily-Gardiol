@@ -10,6 +10,8 @@
 
 #Extras
 /genshinimpact.js
+/wapons.json
+/genshin.json
 
 # production
 /build
