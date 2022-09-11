@@ -1,5 +1,4 @@
 // Contenedor principal 
-import { data } from 'autoprefixer';
 import { useEffect, useState } from 'react'
 import GenshinList from './GenshinList'
 
@@ -32,7 +31,7 @@ const GenshinContainer = () => {
             
 
         return (
-                <div>
+                <div className='flex flex-wrap justify-center flex-row'>
                     <GenshinList genshin={genshin}></GenshinList>
                 </div>
             )

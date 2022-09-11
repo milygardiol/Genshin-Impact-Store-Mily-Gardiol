@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import CartWidget from "./CartWidget"
 
 const NavBar = () => {
@@ -5,13 +6,15 @@ const NavBar = () => {
     <div>
         <div className="navbar bg-base-100">
           <div className="flex-1">
-            <img className="btn btn-ghost normal-case text-xl" src="https://www.gensh.in/fileadmin/Database/items/Currency/wish_Primogem.png" alt="Primogem" />
-            <a className="btn btn-ghost normal-case text-xl">Genshin Impact Store</a>
+            <Link to={"/"}>
+              <img className="btn btn-ghost normal-case text-xl" src="https://www.gensh.in/fileadmin/Database/items/Currency/wish_Primogem.png" alt="Primogem"></img>
+            </Link>
+            <Link className="btn btn-ghost normal-case text-xl" to={"/"}>Genshin Impact Store</Link>
             <div className="flex-none">
                 <ul className="menu menu-horizontal p-0">
-                  <li><a>Characters</a></li>
-                  <li><a>Weapons</a></li>
-                  <li><a>About Us</a></li>
+                  <Link className="btn btn-ghost normal-case text-l" to={"/aboutus"}>About us</Link>
+                  <Link className="btn btn-ghost normal-case text-l" to={"/weapons"}>Weapons</Link>
+                  <Link className="btn btn-ghost normal-case text-l" to={"/characters"}>Characters</Link>
                 </ul>
             </div>
           </div>

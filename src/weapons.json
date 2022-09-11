@@ -1,0 +1,352 @@
+[
+    {
+        "id": 1,
+        "name": "Alley Hunter",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/0/0a/Weapon_Alley_Hunter.png/revision/latest/scale-to-width-down/100?cb=20200716174401",
+        "rating": 4,
+        "baseatk": "41",
+        "secstat": "CRIT Rate",
+        "passive": "Urban Guerrilla",
+        "type": "Bow"
+    },
+    {
+        "id": 2,
+        "name": "Amber Catalyst",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/9/97/Weapon_Amber_Catalyst.png/revision/latest/scale-to-width-down/100?cb=20200619021800",
+        "rating": 3,
+        "baseatk": "40",
+        "secstat": "Elemental Mastery",
+        "passive": "Elemental Mastery",
+        "type": "Catalyst"
+    },
+    {
+        "id":3,
+        "name": "Amos Bow",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/d/de/Weapon_Amos%27_Bow.png/revision/latest/scale-to-width-down/100?cb=20200619000921",
+        "rating": 5,
+        "baseatk": "46",
+        "secstat": "Base ATK",
+        "passive": "Strong-Willed",
+        "type": "Bow"
+    },
+    {
+        "id":4,
+        "name": "Apprentice's Notes",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/c/cf/Weapon_Apprentice%27s_Notes.png/revision/latest/scale-to-width-down/100?cb=20200619025054",
+        "rating": 1,
+        "baseatk": "23",
+        "secstat": "None",
+        "passive": "None",
+        "type": "Catalyst"
+    },
+    {
+        "id":5,
+        "name": "Blackcliff Amulet",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/2/21/Weapon_Blackcliff_Amulet.png/revision/latest/scale-to-width-down/100?cb=20200619015409",
+        "rating": 4,
+        "baseatk": "42",
+        "secstat": "Energy Recharge",
+        "passive": "Exorcise",
+        "type": "Catalyst"
+    },
+    {
+        "id":6,
+        "name": "Blackcliff Longsword",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/6/6f/Weapon_Blackcliff_Longsword.png/revision/latest/scale-to-width-down/100?cb=20200618235000",
+        "rating": 4,
+        "baseatk": "44",
+        "secstat": "Physical DMG Bonus",
+        "passive": "Press the Advantage",
+        "type": "Sword"
+    },
+    {
+        "id":7,
+        "name": "Blackcliff Pole",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/d/d5/Weapon_Blackcliff_Pole.png/revision/latest/scale-to-width-down/100?cb=20200619063418",
+        "rating": 4,
+        "baseatk": "42",
+        "secstat": "CRIT DMG",
+        "passive": "Press the Advantage",
+        "type": "Polearm"
+    },
+    {
+        "id":8,
+        "name": "Black Tassel",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/4/43/Weapon_Black_Tassel.png/revision/latest/scale-to-width-down/100?cb=20200620084411",
+        "rating": 3,
+        "baseatk": "38",
+        "secstat": "HP",
+        "passive": "Bane of the Soft",
+        "type": "Polearm"
+    },
+    {
+        "id":9,
+        "name": "Compound Bow",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/3/32/Weapon_Compound_Bow.png/revision/latest/scale-to-width-down/100?cb=20200619001506",
+        "rating": 4,
+        "baseatk": "41",
+        "secstat": "Physical DMG Bonus",
+        "passive": "Infusion Arrow",
+        "type": "Bow"
+    },
+    {
+        "id":10,
+        "name": "Cool Steel",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/9/9c/Weapon_Cool_Steel.png/revision/latest/scale-to-width-down/100?cb=20200620190036",
+        "rating": 3,
+        "baseatk": "39",
+        "secstat": "ATK",
+        "passive": "Bane of Water and Ice",
+        "type": "Sword"
+    },
+    {
+        "id":11,
+        "name": "Crescent Pike",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/4/4c/Weapon_Crescent_Pike.png/revision/latest/scale-to-width-down/100?cb=20200618235632",
+        "rating": 4,
+        "baseatk": "44",
+        "secstat": "Physical DMG Bonus",
+        "passive": "Infusion Needle",
+        "type": "Polearm"
+    },
+    {
+        "id":12,
+        "name": "Dark Iron Sword",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/3/3a/Weapon_Dark_Iron_Sword.png/revision/latest/scale-to-width-down/100?cb=20200620190232",
+        "rating": 3,
+        "baseatk": "39",
+        "secstat": "Elemental Mastery",
+        "passive": "Overloaded",
+        "type": "Sword"
+    },
+    {
+        "id":13,
+        "name": "Debate Club",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/7/74/Weapon_Debate_Club.png/revision/latest/scale-to-width-down/100?cb=20200620070915",
+        "rating": 3,
+        "baseatk": "39",
+        "secstat": "Base ATK",
+        "passive": "Blunt Conclusion",
+        "type": "Claymore"
+    },
+    {
+        "id":14,
+        "name": "Ebony Bow",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/a/a1/Weapon_Ebony_Bow.png/revision/latest/scale-to-width-down/100?cb=20200619005942",
+        "rating": 3,
+        "baseatk": "40",
+        "secstat": "Base ATK",
+        "passive": "Decimate",
+        "type": "Bow"
+    },
+    {
+        "id":15,
+        "name": "Emerald Orb",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/1/18/Weapon_Jade_Orb.png/revision/latest/scale-to-width-down/100?cb=20200619022211",
+        "rating": 3,
+        "baseatk": "40",
+        "secstat": "Elemental Mastery",
+        "passive": "Rapids",
+        "type": "Catalyst"
+    },
+    {
+        "id":16,
+        "name": "Eye of Perception",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/6/6c/Weapon_Eye_of_Perception.png/revision/latest/scale-to-width-down/100?cb=20200709192151",
+        "rating": 4,
+        "baseatk": "41",
+        "secstat": "Base ATK",
+        "passive": "Echo",
+        "type": "Catalyst"
+    },
+    {
+        "id":17,
+        "name": "Favonius Codex",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/3/36/Weapon_Favonius_Codex.png/revision/latest/scale-to-width-down/100?cb=20200619015621",
+        "rating": 4,
+        "baseatk": "42",
+        "secstat": "Energy Recharge",
+        "passive": "Critical Charge",
+        "type": "Catalyst"
+    },
+    {
+        "id":18,
+        "name": "Favonius Lance",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/5/57/Weapon_Favonius_Lance.png/revision/latest?cb=20200928181912",
+        "rating": 4,
+        "baseatk": "44",
+        "secstat": "Energy Recharge",
+        "passive": "Windfall",
+        "type": "Polearm"
+    },
+    {
+        "id":19,
+        "name": "Favonius Warbow",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/8/85/Weapon_Favonius_Warbow.png/revision/latest/scale-to-width-down/100?cb=20200619003125",
+        "rating": 4,
+        "baseatk": "41",
+        "secstat": "Energy Recharge",
+        "passive": "Windfall",
+        "type": "Bow"
+    },
+    {
+        "id":20,
+        "name": "Fillet Blade",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/f/f7/Weapon_Fillet_Blade.png/revision/latest/scale-to-width-down/100?cb=20200709232110",
+        "rating": 3,
+        "baseatk": "39",
+        "secstat": "ATK",
+        "passive": "Gash",
+        "type": "Sword"
+    },
+    {
+        "id":21,
+        "name": "Iron Sting",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/3/35/Weapon_Iron_Sting.png/revision/latest/scale-to-width-down/100?cb=20200620234336",
+        "rating": 4,
+        "baseatk": "42",
+        "secstat": "Elemental Mastery",
+        "passive": "Infusion Stinger",
+        "type": "Sword"
+    },
+    {
+        "id":22,
+        "name": "Lions Roar",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/e/e6/Weapon_Lion%27s_Roar.png/revision/latest/scale-to-width-down/100?cb=20200620234652",
+        "rating": 4,
+        "baseatk": "42",
+        "secstat": "ATK",
+        "passive": "Bane of Fire and Thunder",
+        "type": "Sword"
+    },
+    {
+        "id":23,
+        "name": "Lithic Blade",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/3/3a/Weapon_Lithic_Blade.png/revision/latest/scale-to-width-down/100?cb=20200716172440",
+        "rating": 4,
+        "baseatk": "41",
+        "secstat": "Crit DMG",
+        "passive": "Lithic Axiom - Unity",
+        "type": "Claymore"
+    },
+    {
+        "id":24,
+        "name": "Lost Prayer to the Sacred Winds",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/9/98/Weapon_Lost_Prayer_to_the_Sacred_Winds.png/revision/latest/scale-to-width-down/100?cb=20200619014501",
+        "rating": 5,
+        "baseatk": "46",
+        "secstat": "CRIT Rate",
+        "passive": "Boundless Blessing",
+        "type": "Catalyst"
+    },
+    {
+        "id":25,
+        "name": "Messenger",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/3/38/Weapon_Messenger.png/revision/latest/scale-to-width-down/100?cb=20200708073530",
+        "rating": 3,
+        "baseatk": "40",
+        "secstat": "CRIT DMG",
+        "passive": "Archer's Message",
+        "type": "Bow"
+    },
+    {
+        "id":26,
+        "name": "Otherworldly Story",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/1/11/Weapon_Otherworldly_Story.png/revision/latest/scale-to-width-down/100?cb=20200717023530",
+        "rating": 3,
+        "baseatk": "39",
+        "secstat": "Energy Recharge",
+        "passive": "Energy Shower",
+        "type": "Catalyst"
+    },
+    {
+        "id":27,
+        "name": "Prototype Aminus",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/6/68/Weapon_Prototype_Aminus.png/revision/latest/scale-to-width-down/100?cb=20200620074014",
+        "rating": 4,
+        "baseatk": "44",
+        "secstat": "ATK",
+        "passive": "Crush",
+        "type": "Claymore"
+    },
+    {
+        "id":28,
+        "name": "Prototype Rancour",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/e/ef/Weapon_Prototype_Rancour.png/revision/latest/scale-to-width-down/100?cb=20200620234906",
+        "rating": 4,
+        "baseatk": "44",
+        "secstat": "Physical DMG Bonus",
+        "passive": "Smashed Stone",
+        "type": "Sword"
+    },
+    {
+        "id":29,
+        "name": "Rainslasher",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/d/d4/Weapon_Rainslasher.png/revision/latest?cb=20200620074157",
+        "rating": 4,
+        "baseatk": "42",
+        "secstat": "Elemental Mastery",
+        "passive": "Bane of Storm and Tide",
+        "type": "Claymore"
+    },
+    {
+        "id":30,
+        "name": "Recurve Bow",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/b/b5/Weapon_Recurve_Bow.png/revision/latest/scale-to-width-down/100?cb=20200709193449",
+        "rating": 3,
+        "baseatk": "38",
+        "secstat": "Base HP",
+        "passive": "Cull the Weak",
+        "type": "Bow"
+    },
+    {
+        "id":31,
+        "name": "Rust",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/1/1c/Weapon_Rust.png/revision/latest/scale-to-width-down/100?cb=20200619005218",
+        "rating": 4,
+        "baseatk": "42",
+        "secstat": "ATK",
+        "passive": "Rapid Firing",
+        "type": "Bow"
+    },
+    {
+        "id":32,
+        "name": "Sacrificial Greatsword",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/1/17/Weapon_Sacrificial_Greatsword.png/revision/latest?cb=20201010021750",
+        "rating": 4,
+        "baseatk": "44",
+        "secstat": "Energy Recharge",
+        "passive": "Composed",
+        "type": "Claymore"
+    },
+    {
+        "id":33,
+        "name": "Skyrider Greatsword",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/6/6e/Weapon_Skyrider_Greatsword.png/revision/latest/scale-to-width-down/100?cb=20200620073049",
+        "rating": 3,
+        "baseatk": "39",
+        "secstat": "Physical DMG Bonus",
+        "passive": "Courage",
+        "type": "Claymore"
+    },
+    {
+        "id":34,
+        "name": "Skyward Blade",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/0/03/Weapon_Skyward_Blade.png/revision/latest/scale-to-width-down/100?cb=20200621000332",
+        "rating": 5,
+        "baseatk": "46",
+        "secstat": "Energy Recharge",
+        "passive": "Sky-Piercing Fang",
+        "type": "Sword"
+    },
+    {
+        "id":35,
+        "name": "The Bell",
+        "url": "https://vignette.wikia.nocookie.net/gensin-impact/images/6/6e/Weapon_The_Bell.png/revision/latest/scale-to-width-down/100?cb=20200620081855",
+        "rating": 4,
+        "baseatk": "42",
+        "secstat": "Base HP",
+        "passive": "Rebellious Guardian",
+        "type": "Claymore"
+    }
+]
