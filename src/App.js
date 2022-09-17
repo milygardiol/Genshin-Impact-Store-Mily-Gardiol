@@ -5,12 +5,13 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import GenshinAbout from './components/genshin-store/GenshinAbout';
 import GenshinContainer from './components/genshinimpact/GenshinContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
-
+import CartContext from './context/CartContext';
 
 
 function App() {
 
   return (
+    <CartContext.Provider>
     <BrowserRouter>
         <NavBar/>
       <Routes>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/weapons" element={<ItemDetailContainer/>}/>
       </Routes>
     </BrowserRouter>
+    </CartContext.Provider>
     )
   }
 

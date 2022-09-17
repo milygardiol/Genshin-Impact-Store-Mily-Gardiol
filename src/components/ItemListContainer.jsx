@@ -1,4 +1,5 @@
 import React from 'react'
+import CartContext from '../context/CartContext'
 import GenshinContainer from './genshinimpact/GenshinContainer'
 
 const ItemListContainer = ({greeting}) => {

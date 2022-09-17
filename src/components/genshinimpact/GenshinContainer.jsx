@@ -1,5 +1,6 @@
 // Contenedor principal 
 import { useEffect, useState } from 'react'
+import GenshinDescription from './GenshinDescription';
 import GenshinList from './GenshinList'
 
 
@@ -33,6 +34,7 @@ const GenshinContainer = () => {
         return (
                 <div className='flex flex-wrap justify-center flex-row'>
                     <GenshinList genshin={genshin}></GenshinList>
+                    <GenshinDescription genshin={genshin}></GenshinDescription>
                 </div>
             )
 
