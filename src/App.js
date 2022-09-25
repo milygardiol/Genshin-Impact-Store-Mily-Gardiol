@@ -5,23 +5,25 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import GenshinAbout from './components/genshin-store/GenshinAbout';
 import GenshinContainer from './components/genshinimpact/GenshinContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
-import CartContext from './context/CartContext';
+import GenFirebase from './components/firebase/GenFirebase';
+import CartProvider from './context/CartContext';
 
 
 function App() {
 
   return (
-    <CartContext.Provider>
-    <BrowserRouter>
-        <NavBar/>
-      <Routes>
-        <Route path='/' element={<ItemListContainer greeting= "¡Welcome to Genshin Impact Store!"/>}/>
-        <Route path='/aboutus' element={<GenshinAbout/>}/>
-        <Route path="/characters" element={<GenshinContainer/>}/>
-        <Route path="/weapons" element={<ItemDetailContainer/>}/>
-      </Routes>
-    </BrowserRouter>
-    </CartContext.Provider>
+    <CartProvider>
+      <BrowserRouter>
+          <NavBar/>
+        <Routes>
+          <Route path='/' element={<ItemListContainer greeting= "¡Welcome to Genshin Impact Store!"/>}/>
+          <Route path='/aboutus' element={<GenshinAbout/>}/>
+          <Route path="/characters" element={<GenshinContainer/>}/>
+          <Route path="/weapons" element={<ItemDetailContainer/>}/>
+          <Route path="/firebase"  element={<GenFirebase/>}/>
+        </Routes>
+      </BrowserRouter>
+    </CartProvider>
     )
   }
 

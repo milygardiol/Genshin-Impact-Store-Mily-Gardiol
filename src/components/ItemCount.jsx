@@ -26,9 +26,10 @@ const ItemCount = ({stock, initial}) => {
             <input type="text" placeholder={onAdd} className="input input-bordered" pattern="[0-9]+" />
             <button className="btn btn-primary" onClick={add}>+</button>
             <button className="btn btn-primary" onClick={() => setAdd(0)}>Reset</button>
-            <button className="btn btn-primary" onClick={() => addToCart([1])} {cart ? "Se agregó correctamente al carrito" : "Agregar al carrito"}>Buy it</button>
         </label>
-        
+          <div>
+            <button className="btn btn-primary" onClick={() => addToCart([1])} {...cart ? "Se agregó correctamente al carrito" : "Agregar al carrito"}>Buy it</button>
+          </div>
     </div>
   )
 }
