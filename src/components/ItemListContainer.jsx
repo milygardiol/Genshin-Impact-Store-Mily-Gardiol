@@ -1,6 +1,6 @@
 import React from 'react'
 import CartContext from '../context/CartContext'
-import GenshinContainer from './genshinimpact/GenshinContainer'
+import GenFirebase from './genshinimpact/GenFirebase'
 
 const ItemListContainer = ({greeting}) => {
   return (
@@ -9,7 +9,7 @@ const ItemListContainer = ({greeting}) => {
       <div className="greeting text-5xl top-1/2 shadow-xl left-10 aling-center text-center m-20 block absolute">{greeting}
       </div>
         <div className='flex flex-wrap flex-row'>
-        <GenshinContainer/>
+          <GenFirebase/>
         </div>
       </div>
   )

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import ItemDetailList from './ItemDetailList';
+import ItemDetailList from '../ItemDetailList';
 
 
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useCartContext } from '../../context/CartContext'
 
-const ItemCart = ({name, quote, city, element, weapon, image}) => {
+const ItemCart = ({name, quote, city, element, weapon, image, price}) => {
 
     const {removeCart} = useCartContext();
   return (
