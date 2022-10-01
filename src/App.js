@@ -1,5 +1,5 @@
 import NavBar from './components/navbar/NavBar';
-import ItemListContainer from './components/ItemListContainer';
+import ItemListContainer from './components/genshinimpact/ItemListContainer';
 import './index.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import GenshinAbout from './components/genshin-store/GenshinAbout';
@@ -20,7 +20,7 @@ function App() {
           <Route path='/' element={<ItemListContainer greeting= "¡Welcome to Genshin Impact Store!"/>}/>
           <Route path='/aboutus' element={<GenshinAbout/>}/>
           <Route path="/characters" element={<GenFirebase/>}/>
-          <Route path="/detail" element={<ItemDetailContainer/>}/>
+          <Route path="/detail/:detailId" element={<ItemDetailContainer/>}/>
           <Route path="/firebase"  element={<GenFirebase/>}/>
           <Route path="/cart" element={<Cart/>}/>
           <Route path='/weapons' element={<GenshinWeapons/>}></Route>

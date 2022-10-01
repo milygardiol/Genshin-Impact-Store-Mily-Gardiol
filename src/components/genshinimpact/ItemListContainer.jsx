@@ -1,6 +1,6 @@
 import React from 'react'
-import CartContext from '../context/CartContext'
-import GenFirebase from './genshinimpact/GenFirebase'
+import CartContext from '../../context/CartContext'
+import GenFirebase from './GenFirebase'
 
 const ItemListContainer = ({greeting}) => {
   return (

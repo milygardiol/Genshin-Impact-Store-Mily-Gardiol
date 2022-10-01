@@ -1,12 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
-import ItemDetail from './ItemDetail';
+import WeaponsCard from './WeaponsCard';
 
-const ItemDetailList = ({weapons}) => {
+const WeaponsList = ({weapons}) => {
     return (
         <div>
             {weapons.length ? (weapons.map((wpn) => 
-                <ItemDetail className="flex flex-wrap justify-center" key = {wpn.id} {...wpn} />
+                <WeaponsCard className="flex flex-wrap justify-center" key = {wpn.id} {...wpn} />
             
                 )) : (
                 <progress className="progress w-56 justify-center"></progress>
@@ -15,4 +14,4 @@ const ItemDetailList = ({weapons}) => {
       );
     };
 
-export default ItemDetailList
+export default WeaponsList
