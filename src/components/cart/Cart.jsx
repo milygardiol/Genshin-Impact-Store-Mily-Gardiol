@@ -1,5 +1,5 @@
 // import { info } from 'daisyui/src/colors/colorNames';
-import { getFirestore } from 'firebase/firestore';
+import { collection, getFirestore, addDoc } from 'firebase/firestore';
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { useCartContext } from '../../context/CartContext'
@@ -27,7 +27,7 @@ const Cart = () => {
 
     const handleClick = () => {
         const db = getFirestore();
-        const ordersCollection = collectin(db, "orders");
+        const ordersCollection = collection(db, "orders");
         addDoc(ordersCollection, order).then(({id}) => console.log(id))
     }
 
