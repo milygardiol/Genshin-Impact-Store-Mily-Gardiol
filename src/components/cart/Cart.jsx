@@ -42,7 +42,7 @@ const Cart = () => {
     return (
         <>
         {
-            cart.map(product => <ItemCart key={id} product={product}/>)
+            cart.map(product => <ItemCart product={product}/>)
         }
         <p>
             Total: {cartPrice()}

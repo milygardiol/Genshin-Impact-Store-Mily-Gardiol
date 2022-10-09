@@ -19,10 +19,8 @@ function App() {
         <Routes>
           <Route path='/' element={<ItemListContainer greeting= "¡Welcome to Genshin Impact Store!"/>}/>
           <Route path='/aboutus' element={<GenshinAbout/>}/>
-          <Route path="/characters" element={<GenFirebase/>}/>
+          <Route path="/characters/:elementId" element={<GenFirebase/>}/>
           <Route path="/detail/:detailId" element={<ItemDetailContainer/>}/>
-          <Route path="/firebase"  element={<GenFirebase/>}/>
-          <Route path="/cart" element={<Cart/>}/>
           <Route path='/weapons' element={<GenshinWeapons/>}></Route>
         </Routes>
       </BrowserRouter>
