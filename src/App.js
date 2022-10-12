@@ -8,7 +8,9 @@ import GenFirebase from './components/genshinimpact/GenFirebase';
 import CartProvider from './context/CartContext';
 import Cart from "./components/cart/Cart";
 import GenshinWeapons from './components/weapons/GenshinWeapons';
-
+import React from 'react';
+export const CartContext = React.createContext("")
+console.log("CartContext: " , CartContext);
 
 function App() {
 
@@ -19,9 +21,9 @@ function App() {
         <Routes>
           <Route path='/' element={<ItemListContainer greeting= "¡Welcome to Genshin Impact Store!"/>}/>
           <Route path='/aboutus' element={<GenshinAbout/>}/>
-          <Route path="/characters/:elementId" element={<GenFirebase/>}/>
-          <Route path="/detail/:detailId" element={<ItemDetailContainer/>}/>
-          <Route path='/weapons' element={<GenshinWeapons/>}></Route>
+          <Route path="/characters" element={<GenFirebase/>}/>
+          <Route path="/detail" element={<ItemDetailContainer/>}/>
+          <Route path='/weapons' element={<GenshinWeapons/>}/>
         </Routes>
       </BrowserRouter>
     </CartProvider>

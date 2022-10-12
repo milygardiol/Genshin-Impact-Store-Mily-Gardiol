@@ -2,8 +2,19 @@ import React, { useEffect, useState } from 'react'
 import { doc, getFirestore, getDoc} from "firebase/firestore";
 import { Link, useParams } from 'react-router-dom';
 import ItemCount from './ItemCount';
+import { useCartContext } from '../../context/CartContext';
 
 const ItemDetail = ({name, image, city, description, element, weapon, quote, rating, price}) => {
+
+  const {addToCart} = useCartContext();
+  const [goToCart, setGoToCart] = useState(false)
+
+  const addProd = (quantity) => {
+    setGoToCart(true);
+    addToCart(name, quantity)
+  }
+
+
     return (
       <Link to={`/detail/${name}`}>
         <div className="card w-96 glass">
@@ -19,10 +30,11 @@ const ItemDetail = ({name, image, city, description, element, weapon, quote, rat
             <p>Price: ${price}</p>
             <div className="card-actions justify-end">
               <div className="card-actions justify-end">
-                  <ItemCount stock="5" initial="0"></ItemCount>
-                  <div>
-                  <Link htmlFor="my-modal-4" to="/detail" className="btn modal-button">More info</Link>
-                </div>
+                {
+                  goToCart
+                    ? <Link to="/cart">Finish buying</Link>
+                    : <ItemCount stock="5" initial="0" addProd={addProd}></ItemCount>
+                }
               </div>
             </div>
           </div>
