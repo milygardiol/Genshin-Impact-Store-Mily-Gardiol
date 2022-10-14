@@ -15,7 +15,6 @@ const ItemCount = ({stock, initial, addProd}) => {
     const add = () => {setAdd (onAdd + 1)};
     const remove = () => {setAdd (onAdd - 1)};
 
-
   return (
     <div className="form-control">
         <label className="label">

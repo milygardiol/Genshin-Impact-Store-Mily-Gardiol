@@ -1,11 +1,24 @@
 import React, { useEffect, useState } from 'react'
-import { collection, getFirestore, getDocs, query, where} from "firebase/firestore";
-import { Link, useParams } from 'react-router-dom';
+import { collection, getFirestore, getDocs} from "firebase/firestore";
+import { Link } from 'react-router-dom';
+import Links from './Links';
+import { useCartContext } from '../../context/CartContext';
+import ItemCount from './ItemCount';
 
 
 
 const FireCard = ({image, name, quote, city, weapon, element, rating, price}) => {
-  
+
+
+
+  const {addToCart} = useCartContext();
+  const [goToCart, setGoToCart] = useState(false)
+
+  const addProd = (quantity) => {
+    setGoToCart(true);
+    addToCart(name, quantity)
+  }
+
   return (
       <div className="card card-compact w-96 bg-base-100 shadow-2xl m-10">
         <figure><img src={image} alt="Genshin Impact Characters"></img></figure>
@@ -17,7 +30,15 @@ const FireCard = ({image, name, quote, city, weapon, element, rating, price}) =>
           <p>Weapon: {weapon}</p>
           <p>Rating: {rating}</p>
           <span>Price: ${price}</span>
-              <Link htmlFor="my-modal-4" to="/detail" className="btn modal-button">More info</Link>
+              <div className="card-actions justify-end">
+              <div className="card-actions justify-end">
+                {
+                  goToCart
+                    ? <Link to="/cart">Finish buying</Link>
+                    : <ItemCount stock="5" initial="0" addProd={addProd}></ItemCount>
+                }
+              </div>
+            </div>
             </div>
         </div>
   )
@@ -27,24 +48,21 @@ const FireCard = ({image, name, quote, city, weapon, element, rating, price}) =>
 const GenFirebase = () => {
 
     const [chars, setCharacters] = useState([])
-    const {elementId} = useParams();
+    
+
+
 
     useEffect(() => {
         const db = getFirestore()
         const itemCollection = collection (db, "characters")
-        if(elementId) {
-          const queryFilter = query(itemCollection, where("element", "==", elementId))
-          getDocs(queryFilter)
-          .then (chars => setCharacters(chars.docs.map (c =>  ({id: c.id , ...c.data()}))))
-        } else {
-          getDocs(itemCollection)
-          .then (chars => setCharacters(chars.docs.map (c =>  ({id: c.id , ...c.data()}))))
-       }
-        },[elementId]) ;
+        getDocs(itemCollection)
+        .then (chars => setCharacters(chars.docs.map (c =>  ({id: c.id , ...c.data()}))))
+      },[]) ;
       
 
       return(
         <div>
+          <Links/>
           {chars.map(c => <FireCard key={c.id} {...c}/>)}
         </div>
       )

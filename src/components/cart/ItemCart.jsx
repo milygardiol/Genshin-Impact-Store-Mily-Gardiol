@@ -4,6 +4,7 @@ import { useCartContext } from '../../context/CartContext'
 const ItemCart = ({name, quote, city, element, weapon, image, price}) => {
 
     const {removeCart} = useCartContext();
+
   return (
     <div>
         <div className="card card-compact w-96 bg-base-100 shadow-2xl m-10">
@@ -14,8 +15,8 @@ const ItemCart = ({name, quote, city, element, weapon, image, price}) => {
         <p>City: {city}</p>
         <p>Element: {element}</p>
         <p>Weapon: {weapon}</p>
-        <p>Subtotal: ${quantity * price}</p>
-        <button onClick={() => removeCart(id)}>Remove</button>
+        <p>Subtotal: ${price}</p>
+        <button onClick={() => removeCart(name)}>Remove</button>
       </div>
       </div>
     </div>

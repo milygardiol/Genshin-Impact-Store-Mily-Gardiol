@@ -21,12 +21,17 @@ const CartProvider = ({children}) => {
 
     const totalCart = () => cartPrice.reduce((acumulador, productoActual) => acumulador + productoActual.quantity, 0);
 
-    const addToCart = (item, newQuantity) => {
-        const newCart = cart.filter(prod => prod.id !== item.id);
-        newCart.push({...item, quantity:newQuantity});
-        setCart(newCart)
+    const addToCart = (item, quantity) => {
+       if(isInCart(item.id)) {
+        setCart(cart.map( product => {
+          return product.id === item.id ? { ...product, quantity: product.quantity + quantity} : product
+        }));
+        } else {
+          setCart([...cartPrice, {...item, quantity}]);
+        }
     }
 
+    console.log("carrito: ", cart);
 
 
 

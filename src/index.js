@@ -10,12 +10,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDvRlFQ-YlpkuE39P_dMfxQASUGIn4XrhI",
-  authDomain: "genshin-impact-store.firebaseapp.com",
-  projectId: "genshin-impact-store",
-  storageBucket: "genshin-impact-store.appspot.com",
-  messagingSenderId: "1073781625664",
-  appId: "1:1073781625664:web:2da3147855f26553ffe0a5"
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId
 };
 
 // Initialize Firebase
